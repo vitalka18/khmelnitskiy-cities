@@ -7,8 +7,6 @@ notifications:
   email: false
 node_js:
   - 10
-before_install:
-  - npm i -g npm
 script:
   - npm run test:single
 after_success: 
