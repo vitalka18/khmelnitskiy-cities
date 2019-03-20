@@ -1,0 +1,31 @@
+{
+  "name": "khmelnitskiy-cities",
+  "version": "1.0.0",
+  "description": "List of Khmelnitskiy region's cities",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitalka18/khmelnitskiy-cities.git"
+  },
+  "keywords": [
+    "khm",
+    "khmelnitskiy",
+    "uk",
+    "ukraine"
+  ],
+  "author": "Kriskov Vitaliy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vitalka18/khmelnitskiy-cities/issues"
+  },
+  "homepage": "https://github.com/vitalka18/khmelnitskiy-cities#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.1"
+  },
+  "devDependencies": {
+    "format-package": "4.5.0"
+  }
+}
