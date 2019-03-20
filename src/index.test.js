@@ -6,11 +6,7 @@ describe('cities:', function() {
     it('shold be an array of string', function() {
       expect(cities.all).to.satisfy(isArrayOfStrings);
 
-      function isArrayOfStrings(array) {
-        return array.every(function(i) {
-          return typeof(i) === 'string';
-        });
-      }
+      
     });
 
     it('should contain Хмельницький city', function() {
@@ -19,7 +15,7 @@ describe('cities:', function() {
   });
 
   describe('random:', function() {
-    it('shold be a string', function() {
+    it('should be a string if no arguments passed', function() {
       expect(cities.random()).to.be.string;
     });
 
@@ -30,6 +26,18 @@ describe('cities:', function() {
         return cities.all.includes(city)
       }
     });
+
+    it('should return an array if passed a number', function() {
+      const randomCities = cities.random(3);
+
+      expect(randomCities).to.satisfy(isArrayOfStrings);
+      expect(randomCities).to.have.length(3);
+    });
   });
 });
 
+function isArrayOfStrings(array) {
+  return array.every(function(i) {
+    return typeof(i) === 'string';
+  });
+}
