@@ -6,7 +6,8 @@ cache:
 notifications:
   email: false
 node_js:
-  - iojs
+  - 8
+  - 6
 before_install:
   - npm i -g npm
 before_script:
@@ -14,5 +15,9 @@ before_script:
 script:
   - npm run test
 after_success: 
-  - npm run semantic-release
+  -  npx semantic-release
+
+
+
+
 

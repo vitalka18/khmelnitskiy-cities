@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha src/index.test.js -w",
+    "test:single": "mocha src/index.test.js",
     "semantic-release": "semantic-release"
   },
   "repository": {
