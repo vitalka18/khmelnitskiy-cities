@@ -1,6 +1,6 @@
 {
   "name": "khmelnitskiy-cities",
-  "version": "0.0.0-semantic-released",
+  "version": "0.0.0-semantically-released",
   "description": "List of Khmelnitskiy region's cities",
   "main": "src/index.js",
   "scripts": {
