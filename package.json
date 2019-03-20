@@ -1,6 +1,6 @@
 {
   "name": "khmelnitskiy-cities",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantic-released",
   "description": "List of Khmelnitskiy region's cities",
   "main": "src/index.js",
   "scripts": {
@@ -34,6 +34,9 @@
     "format-package": "4.5.0",
     "mocha": "6.0.2",
     "semantic-release": "^15.13.3"
+  },
+  "release": {
+    "branch": "master"
   },
   "config": {
     "commitizen": {
