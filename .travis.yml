@@ -1,12 +1,13 @@
-sudo: false
 language: node_js
 cache:
   directories:
     - node_modules
-notifications:
-  email: false
 node_js:
-  - 10
+  - "10"
+install:
+  - npm i -g mocha
+  - npm i -g semantic-release-cli
+  - npm install
 script:
   - npm run test:single
 after_success: 
