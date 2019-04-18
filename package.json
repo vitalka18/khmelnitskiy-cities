@@ -6,7 +6,7 @@
   "scripts": {
     "commit": "git-cz",
     "test": "mocha src/index.test.js -w",
-    "test:single": "mocha src/index.test.js",
+    "test:single": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -37,6 +37,7 @@
     "eslint-plugin-import": "2.17.2",
     "format-package": "4.5.0",
     "ghooks": "2.0.4",
+    "istanbul": "0.4.5",
     "mocha": "6.0.2",
     "semantic-release": "15.13.3"
   },
